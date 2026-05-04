@@ -1,11 +1,11 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 
-// If you rename the repo to `FrauBlucher.github.io` (recommended for a personal site),
-// the site lives at the domain root and `base` stays as '/'.
-// If you keep a different repo name (e.g. `Website_phil`), set base: '/Website_phil/'.
+// Personal site lives at the domain root, so `base` stays as '/'.
+// Requires a GitHub repo named `filippocarmenati.github.io` under the
+// `filippocarmenati` GitHub user/organization.
 export default defineConfig({
-  site: 'https://FrauBlucher.github.io',
+  site: 'https://filippocarmenati.github.io',
   base: '/',
   trailingSlash: 'ignore',
 });

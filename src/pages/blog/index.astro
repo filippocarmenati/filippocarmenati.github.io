@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getBlogPosts, getAllTags, tagSlug } from '../../lib/blog';
+import { fmtDate } from '../../lib/rubricas';
+
+const posts = await getBlogPosts();
+const tags = await getAllTags();
+---
+<BaseLayout title="Blog" description="Posts, reflections, poems, and pages from my diaries." bodyClass="blog-index">
+  <h1>Blog</h1>
+
+  {tags.length > 0 && (
+    <p class="tag-cloud" aria-label="Topics">
+      {tags.map((t, i) => (
+        <>
+          {i > 0 && <span class="tag-sep"> · </span>}
+          <a class="tag-link" href={`/blog/tag/${tagSlug(t)}`}>{t}</a>
+        </>
+      ))}
+    </p>
+  )}
+
+  {posts.length === 0 ? (
+    <p><em>No posts yet. Add a markdown file under <code>src/content/blog/</code>.</em></p>
+  ) : (
+    <ol class="post-list" reversed>
+      {posts.map(p => (
+        <li class="post-item">
+          <a class="post-title" href={`/blog/${p.id}`}>{p.data.title}</a>
+          {p.data.date && <div class="post-date">{fmtDate(p.data.date)}</div>}
+          {p.data.summary && <p class="post-summary">{p.data.summary}</p>}
+        </li>
+      ))}
+    </ol>
+  )}
+</BaseLayout>

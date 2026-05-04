@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getAllTags, getPostsByTag, tagSlug } from '../../../lib/blog';
+import { fmtDate } from '../../../lib/rubricas';
+
+export async function getStaticPaths() {
+  const tags = await getAllTags();
+  return tags.map(t => ({ params: { tag: tagSlug(t) }, props: { label: t } }));
+}
+
+const { label } = Astro.props as { label: string };
+const posts = await getPostsByTag(label);
+---
+<BaseLayout title={`Tag: ${label}`} description={`Posts tagged "${label}".`} bodyClass="blog-index">
+  <p class="back-link"><a href="/blog">← All posts</a></p>
+  <h1>#{label}</h1>
+
+  {posts.length === 0 ? (
+    <p><em>No posts with this tag.</em></p>
+  ) : (
+    <ol class="post-list" reversed>
+      {posts.map(p => (
+        <li class="post-item">
+          <a class="post-title" href={`/blog/${p.id}`}>{p.data.title}</a>
+          {p.data.date && <div class="post-date">{fmtDate(p.data.date)}</div>}
+          {p.data.summary && <p class="post-summary">{p.data.summary}</p>}
+        </li>
+      ))}
+    </ol>
+  )}
+</BaseLayout>

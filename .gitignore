@@ -28,3 +28,6 @@ pnpm-debug.log*
 *.doc
 *.pdf
 ~$*
+
+# Claude Code local config
+.claude/

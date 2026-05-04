@@ -2,30 +2,107 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 <BaseLayout title="Home" bodyClass="home">
-  <style is:global>
-    body.home main { font-size: 26px; }
-    body.home main .hello { font-size: 34px; }
-  </style>
-  <p class="hello"><strong>Hello!</strong></p>
+  <div class="home-layout">
+    <aside class="home-sidebar">
+      <img
+        src="/images/profile.jpg"
+        alt="Filippo Carmenati"
+        class="profile-image"
+        width="200"
+        height="200"
+      />
+      <div class="social-buttons-container">
+        <a
+          class="social-button"
+          href="https://www.linkedin.com/in/filippo-carmenati-5215ba1b4/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >LinkedIn</a>
+        <a
+          class="social-button"
+          href="mailto:filippo.carmenati@gmail.com"
+        >Email</a>
+      </div>
+    </aside>
 
-  <p>
-    Welcome to my online space. You’ve probably ended up here by chance or on
-    purpose. Feel free to have a look around.
-  </p>
+    <div class="home-content">
+      <p class="hello"><strong>Hi there, were you looking for me?</strong></p>
 
-  <p>
-    If you’d like to know <a href="/about-me"><strong>“About me”</strong></a>.
-  </p>
-  <p>
-    If you’d like to know what <a href="/projects"><strong>“Projects”</strong></a> I’ve worked
-    on or am currently working on.
-  </p>
-  <p>
-    If you’d like to read some of my <a href="/writings"><strong>“Writings”</strong></a>.
-  </p>
-  <p>
-    If you’re still curious, these
-    <a href="/rubricas"><strong>“Unusual Rubricas”</strong></a> will show you the upside
-    down part of my diaries.
-  </p>
+      <p>
+        I am a recent Dr. Sc. ETH Zurich in Agricultural Science graduated with a
+        thesis titled:
+        <a
+          href="https://www.research-collection.ethz.ch/entities/publication/dd909597-43d4-42df-827f-3807a08f9964"
+          target="_blank"
+          rel="noopener noreferrer"
+        >“Agricultural diversification through the use of underutilized crops”</a>.
+      </p>
+
+      <p>
+        Despite my scientific background and this rather “grand-sounding”
+        title, I feel I have only scratched the surface of many things. My
+        interests are quite interdisciplinary and driven by genuine curiosity.
+        I could group them all under the broad and fascinating umbrella of
+        interactions.
+      </p>
+
+      <p>
+        The simple aim of this site is to try to bring what I write and think
+        in my diaries into a space that is more accessible to everyone.
+      </p>
+
+      <p>
+        If you’d like a slightly longer description of who I am, you can find
+        it <a href="/about-me">here</a>.
+      </p>
+
+      <h2 class="home-section-heading">Academic interests</h2>
+      <ul class="home-list">
+        <li>
+          <a
+            href="https://www.youtube.com/watch?v=HEjD1-D2KLE"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Plant phenomics</a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/watch?v=dCs2r4kpHKQ&t=33s"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Plant–plant interactions</a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/watch?v=bVcLekZ_L90"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Plant phenotypic plasticity</a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/watch?v=mOssYTimQwM&t=420s"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Gamification</a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/watch?v=0gCh89_4Jzo&t=131s"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Cereal–legume mixed cropping</a>
+        </li>
+      </ul>
+
+      <h2 class="home-section-heading">Currently looking</h2>
+      <ul class="home-list">
+        <li>Postdoc positions</li>
+        <li>
+          Developing and testing a card game to teach crop-diversification
+          effects
+        </li>
+      </ul>
+    </div>
+  </div>
 </BaseLayout>

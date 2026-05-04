@@ -26,27 +26,55 @@ if (!index) {
 }
 
 const { Content } = await render(index);
+const isGallery = index.data.gallery === true;
+const items = index.data.items ?? [];
 ---
-<BaseLayout title={index.data.title} description={index.data.summary}>
+<BaseLayout
+  title={index.data.title}
+  description={index.data.summary}
+  bodyClass={isGallery ? 'rubrica-gallery' : undefined}
+>
   <p><a href="/rubricas">← Rubricas</a></p>
   <h1>{index.data.title}</h1>
 
   <Content />
 
-  <h2>Entries</h2>
-  {entries.length === 0 ? (
-    <p><em>No entries yet in this rubrica.</em></p>
+  {isGallery && items.length > 0 ? (
+    <div class="mentor-grid">
+      {items.map(item => (
+        <a
+          class="mentor-tile"
+          href={item.link ?? '#'}
+          target={item.link ? '_blank' : undefined}
+          rel={item.link ? 'noopener noreferrer' : undefined}
+          aria-label={item.name}
+        >
+          <img src={item.image} alt={item.alt ?? item.name} loading="lazy" />
+          <div class="mentor-overlay">
+            <span class="mentor-name">{item.name}</span>
+            {item.caption && <span class="mentor-caption">{item.caption}</span>}
+          </div>
+        </a>
+      ))}
+    </div>
   ) : (
-    <ul class="entries">
-      {entries.map(e => {
-        const { entry } = splitId(e.id);
-        return (
-          <li>
-            <a href={`/rubricas/${rubrica}/${entry}`}>{e.data.title}</a>
-            <span class="date">{fmtDate(e.data.date)}</span>
-          </li>
-        );
-      })}
-    </ul>
+    <>
+      <h2>Entries</h2>
+      {entries.length === 0 ? (
+        <p><em>No entries yet in this rubrica.</em></p>
+      ) : (
+        <ul class="entries">
+          {entries.map(e => {
+            const { entry } = splitId(e.id);
+            return (
+              <li>
+                <a href={`/rubricas/${rubrica}/${entry}`}>{e.data.title}</a>
+                <span class="date">{fmtDate(e.data.date)}</span>
+              </li>
+            );
+          })}
+        </ul>
+      )}
+    </>
   )}
 </BaseLayout>

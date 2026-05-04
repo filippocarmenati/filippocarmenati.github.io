@@ -4,12 +4,14 @@ import { getRubricaIndexes, splitId } from '../../lib/rubricas';
 
 const indexes = await getRubricaIndexes();
 ---
-<BaseLayout title="Unusual Rubricas" description="Recurring themes from my diaries.">
+<BaseLayout title="Unusual Rubricas" description="Recurring themes from my diaries." bodyClass="rubricas-index">
   <h1>Unusual Rubricas</h1>
 
-  <p class="muted">
-    Rubricas are recurring themes I track in my diaries — collections of questions,
-    people, and things worth paying attention to.
+  <p class="rubricas-caption">
+    These are the "unusual rubricas" written at the end of my diaries when you
+    put them upside down. Some of them begin and ends with the life for that
+    diaries, while some others I will bring with me into the next diary. If
+    well read, they might include other side of myself.
   </p>
 
   {indexes.length === 0 ? (

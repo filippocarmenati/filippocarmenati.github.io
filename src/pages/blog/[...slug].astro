@@ -1,0 +1,59 @@
+---
+import { render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getBlogPosts, tagSlug } from '../../lib/blog';
+import { fmtDate } from '../../lib/rubricas';
+
+export async function getStaticPaths() {
+  const posts = await getBlogPosts();
+  return posts.map(p => ({ params: { slug: p.id }, props: { post: p } }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const isFeatured = post.data.featured === true;
+const tags = post.data.tags ?? [];
+---
+{isFeatured ? (
+  <BaseLayout title={post.data.title} description={post.data.summary} bodyClass="featured-entry">
+    <p class="featured-back"><a href="/blog">← Blog</a></p>
+    {post.data.heroImage && (
+      <figure class="featured-hero">
+        <img src={post.data.heroImage} alt={post.data.heroAlt ?? ''} />
+        {post.data.heroCredit && <figcaption class="hero-credit">{post.data.heroCredit}</figcaption>}
+      </figure>
+    )}
+    <h1 class="featured-title">{post.data.title}</h1>
+    {post.data.date && <p class="featured-date">{fmtDate(post.data.date)}</p>}
+    <div class="featured-body">
+      <Content />
+    </div>
+    {tags.length > 0 && (
+      <p class="post-tags">
+        {tags.map((t, i) => (
+          <>
+            {i > 0 && <span class="tag-sep"> · </span>}
+            <a class="tag-link" href={`/blog/tag/${tagSlug(t)}`}>{t}</a>
+          </>
+        ))}
+      </p>
+    )}
+  </BaseLayout>
+) : (
+  <BaseLayout title={post.data.title} description={post.data.summary}>
+    <p><a href="/blog">← Blog</a></p>
+    <h1>{post.data.title}</h1>
+    {post.data.date && <p class="date">{fmtDate(post.data.date)}</p>}
+    <Content />
+    {tags.length > 0 && (
+      <p class="post-tags">
+        {tags.map((t, i) => (
+          <>
+            {i > 0 && <span class="tag-sep"> · </span>}
+            <a class="tag-link" href={`/blog/tag/${tagSlug(t)}`}>{t}</a>
+          </>
+        ))}
+      </p>
+    )}
+  </BaseLayout>
+)}

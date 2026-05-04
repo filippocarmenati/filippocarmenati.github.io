@@ -1,28 +1,20 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
-const projects = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/projects' }),
-  schema: z.object({
-    title: z.string(),
-    date: z.coerce.date(),
-    summary: z.string().optional(),
-    url: z.string().url().optional(),
-    draft: z.boolean().default(false),
-  }),
-});
-
-// Writings are organized by subfolder. Each subfolder = one category (e.g. poetries, diaries-pages).
-// A file named `_index.md` inside a category folder describes the category itself.
-// Any other .md file is an entry inside that category.
-const writings = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/writings' }),
+// Blog posts live as a flat list of .md files under src/content/blog/.
+// Posts are grouped by free-form `tags` (e.g. "poetry", "diary", "reflections").
+const blog = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/blog' }),
   schema: z.object({
     title: z.string(),
     date: z.coerce.date().optional(),
     summary: z.string().optional(),
-    isIndex: z.boolean().default(false),
+    tags: z.array(z.string()).default([]),
     draft: z.boolean().default(false),
+    featured: z.boolean().default(false),
+    heroImage: z.string().optional(),
+    heroAlt: z.string().optional(),
+    heroCredit: z.string().optional(),
   }),
 });
 
@@ -37,7 +29,15 @@ const rubricas = defineCollection({
     summary: z.string().optional(),
     isIndex: z.boolean().default(false),
     draft: z.boolean().default(false),
+    gallery: z.boolean().default(false),
+    items: z.array(z.object({
+      name: z.string(),
+      link: z.string().optional(),
+      image: z.string(),
+      alt: z.string().optional(),
+      caption: z.string().optional(),
+    })).optional(),
   }),
 });
 
-export const collections = { projects, writings, rubricas };
+export const collections = { blog, rubricas };
