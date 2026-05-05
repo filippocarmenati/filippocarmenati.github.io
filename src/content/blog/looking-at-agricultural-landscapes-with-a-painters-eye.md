@@ -7,12 +7,12 @@ summary: "On colour theory and crop diversity: where complementary pigments and 
 featured: false
 heroImage: "/images/posts/agriculture-painter/fig-1-grassland.jpg"
 heroAlt: "A wildflower meadow paired with a multicoloured dot painting."
-heroCredit: "Carmenati et al., 2025 (WFSC Symposium poster). Field photograph: Walter Dietl — Agroscope."
+heroCredit: "Carmenati et al., 2025 (WFSC Symposium poster). Field photograph: Walter Dietl - Agroscope."
 ---
 
-We tend to keep art and science in two separate boxes, as if they were different twins of one pair. Art is pictured as the inventive expression of a passing emotion, where colours and feelings meet, while science is linked to rigour, precision, rationality, and a paler, more sterile flavour — as though the right side of the brain (the supposedly rational one) and the left (the creative one) don't communicate to each other.
+We tend to keep art and science in two separate boxes, as if they were different twins of one pair. Art is pictured as the inventive expression of a passing emotion, where colours and feelings meet, while science is linked to rigour, precision, rationality, and a paler, more sterile flavour - as though the right side of the brain (the supposedly rational one) and the left (the creative one) don't communicate to each other.
 
-For many people and many subjects, that is how it goes. Not because they really are like that, but because the meeting point between the two stays harder to find. During my own work, I have often ended up bringing the two together, mixing numbers with colours and trying to turn whatever data I had into pictures — pictures that, on a good day, became drawings (not necessarily beautiful ones, unfortunately).
+For many people and many subjects, that is how it goes. Not because they really are like that, but because the meeting point between the two stays harder to find. During my own work, I have often ended up bringing the two together, mixing numbers with colours and trying to turn whatever data I had into pictures - pictures that, on a good day, became drawings (not necessarily beautiful ones, unfortunately).
 
 Research and art share more than we usually admit. Both are demanding, both ask for similar steps, both begin on a blank page that can be intimidating or with endless potential.
 
@@ -29,7 +29,7 @@ If we look at the plants growing in a meadow and give each species a colour, the
   <figcaption><strong>Figure 1:</strong> Grassland and mixed of colours from Carmenati et al., 2025<sup>1</sup>. Grassland picture from Walter Dietl (2024 – Agroscope).</figcaption>
 </figure>
 
-Turn the gaze to a bright field of rapeseed — that beautiful yellow — and apply the same method, and the picture changes (Figure 2). One colour fills the frame. The composition is gone, and what remains is a single-tone canvas.
+Turn the gaze to a bright field of rapeseed - that beautiful yellow - and apply the same method, and the picture changes (Figure 2). One colour fills the frame. The composition is gone, and what remains is a single-tone canvas.
 
 <figure>
   <img src="/images/posts/agriculture-painter/fig-2-rapeseed.jpg" alt="A rapeseed field paired with a yellow paint swath." />
@@ -45,18 +45,18 @@ Agroecology attempts to put some of those lost colours back. Not by adding any r
 
 Answering those questions takes more than artistic instinct. The choice rests on precise parameters, anchored in what biologists call *fitness*<sup>2,3</sup>. In other words, the ability of the crop (of a specific genetic make-up) to survive and reproduce relative to the other plants (the other genotypes) in the same population. In a mixed-cropping system the choice of crops matters as much as the choice of pigments for a painting.
 
-If we select different species to diversify production, then — as it is for colours — we will look to get complementarity between parts (Figure 4). Looking at things as a painter does, following the theory of colours<sup>4,5</sup>, two complementary colours would cancel each other out when joined, producing a third colour somewhere on the grey scale.
+If we select different species to diversify production, then - as it is for colours - we will look to get complementarity between parts (Figure 4). Looking at things as a painter does, following the theory of colours<sup>4,5</sup>, two complementary colours would cancel each other out when joined, producing a third colour somewhere on the grey scale.
 
 <figure>
   <img src="/images/posts/agriculture-painter/fig-ryb-wheel.png" alt="Six panels showing the three complementary pairs in the traditional RYB colour model: red/green, yellow/purple, blue/orange." />
-  <figcaption><strong>Figure 4:</strong> Complementary colours in the traditional RYB colour model. By Ellywa — own work based on <em>Contrast of complementary colors.jpg</em>, CC BY-SA 4.0. <a href="https://commons.wikimedia.org/w/index.php?curid=64836948">Wikimedia Commons</a>.</figcaption>
+  <figcaption><strong>Figure 4:</strong> Complementary colours in the traditional RYB colour model. By Ellywa - own work based on <em>Contrast of complementary colors.jpg</em>, CC BY-SA 4.0. <a href="https://commons.wikimedia.org/w/index.php?curid=64836948">Wikimedia Commons</a>.</figcaption>
 </figure>
 
 For instance, let's consider the painting that gave Impressionism its name (Figure 5). The orange of the sun lifts off the canvas because the background is its complement, blue. This happens because the two colours are paired, and the contrast makes the sun look as though it is stepping out of the frame. About that, Monet would write in 1888: *"colour makes its impact from contrasts rather than from its inherent qualities… the primary colours seem more brilliant when they are in contrast with their complementary colours."*<sup>6</sup>
 
 <figure>
   <img src="/images/posts/agriculture-painter/fig-monet.png" alt="Impression, Sunrise by Claude Monet, with a detail showing the small but vivid orange sun against the blue background." />
-  <figcaption><strong>Figure 5:</strong> <em>Impression, Sunrise</em> by Claude Monet (1872) — a tiny but vivid orange sun (within the white frame) against a blue background. The painting gave its name to the Impressionist movement. <em>Source: Wikipedia.</em></figcaption>
+  <figcaption><strong>Figure 5:</strong> <em>Impression, Sunrise</em> by Claude Monet (1872) - a tiny but vivid orange sun (within the white frame) against a blue background. The painting gave its name to the Impressionist movement. <em>Source: Wikipedia.</em></figcaption>
 </figure>
 
 Similarly, in agroecology, plants growing in mixed systems follow the same rule of complementarity between divergent functional traits<sup>7</sup>. The classical intercropping example involves cereals and legumes. As with blue and orange, the two are complements: the cereal takes up nitrogen from the soil while the legume fixes it from the air. The functional traits diverge, and in diverging they complete each other<sup>8</sup>. Some cereals have fibrous roots; some legumes have taproots. They explore different layers of the soil, compete less with each other, and use the various horizons more fully. Complementarity also lives in canopy architecture: when plants grow in different shapes, they share light better, compete less, and yield more (Figure 6).
@@ -70,14 +70,14 @@ Continuing the synaesthetic game between plants and colour, a second order of co
 
 In farming, blends of cultivars from the same species have been used for a long time (Frankel, 1939)<sup>10</sup>. The practice has proved a sound way to lift yields and steady their quality from one harvest to the next. Reiss and Drinkwater (2018)<sup>11</sup> report that yield rises with the number of cultivars in the field, with five-cultivar mixtures, for instance, out-yielding three-cultivar ones in their meta-analysis.
 
-Let's consider the effect of pairing complementarity between colours (interspecies) with complementarity within a single colour (intraspecies) — different species and different cultivars together. Back to blue and orange. Van Gogh, in *The Starry Night* (Figure 7), sets shades of yellow and ochre against the cobalt blue of the sky, using both contrasts at once: complementary pairs and the gradations within each pair, so the stars stand out.
+Let's consider the effect of pairing complementarity between colours (interspecies) with complementarity within a single colour (intraspecies) - different species and different cultivars together. Back to blue and orange. Van Gogh, in *The Starry Night* (Figure 7), sets shades of yellow and ochre against the cobalt blue of the sky, using both contrasts at once: complementary pairs and the gradations within each pair, so the stars stand out.
 
 <figure>
   <img src="/images/posts/agriculture-painter/fig-starry-night.png" alt="The Starry Night by Vincent van Gogh, with a detail of the yellow stars and moon against the cobalt sky." />
-  <figcaption><strong>Figure 7:</strong> <em>The Starry Night</em> by Vincent van Gogh (1889) — yellow stars and a yellow moon against a cobalt-blue sky. <em>Source: Wikipedia.</em></figcaption>
+  <figcaption><strong>Figure 7:</strong> <em>The Starry Night</em> by Vincent van Gogh (1889) - yellow stars and a yellow moon against a cobalt-blue sky. <em>Source: Wikipedia.</em></figcaption>
 </figure>
 
-In nature, as in art, much of the beauty and the success of a system comes from the careful joining of divergent complements — colours on a canvas, or functional traits among plants in a piece of land (Figure 1).
+In nature, as in art, much of the beauty and the success of a system comes from the careful joining of divergent complements - colours on a canvas, or functional traits among plants in a piece of land (Figure 1).
 
 ---
 

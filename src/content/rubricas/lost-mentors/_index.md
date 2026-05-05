@@ -101,7 +101,7 @@ items:
     caption: ""
 ---
 
-At the end of each of my diaries there is a section called — Inspiring
+At the end of each of my diaries there is a section called - Inspiring
 people counting all that individuals I have never met but that involuntary
 shaped my way of thinking and I find truly inspiring for what they did and
 were and represent to me.
