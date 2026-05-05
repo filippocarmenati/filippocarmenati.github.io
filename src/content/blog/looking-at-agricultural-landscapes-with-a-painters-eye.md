@@ -1,9 +1,9 @@
 ---
 title: "Looking at agricultural landscape with the sight of a painter"
-subtitle: "Complementarity in colors and in intercropping systems"
+subtitle: "On colour theory and crop diversity: where complementary pigments and complementary functional traits play the same game."
 date: 2026-05-04
 tags: ["agroecology", "art"]
-summary: "On colour theory and crop diversity — where complementary pigments and complementary functional traits play the same game."
+summary: "On colour theory and crop diversity: where complementary pigments and complementary functional traits play the same game."
 featured: false
 heroImage: "/images/posts/agriculture-painter/fig-1-grassland.jpg"
 heroAlt: "A wildflower meadow paired with a multicoloured dot painting."
