@@ -28,6 +28,7 @@ pnpm-debug.log*
 *.doc
 *.pdf
 ~$*
+src/content/blog/Text_blog/
 
 # Claude Code local config
 .claude/
