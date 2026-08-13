@@ -35,6 +35,7 @@ src/content/blog/Text_blog/
 
 # Raw camera source photos (large; cropped copies live in public/images/)
 Pictures_profile_intercropping/
+Pictures/
 
 # Claude Code local config
 .claude/

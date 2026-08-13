@@ -5,7 +5,21 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <style is:global>
     main .about-heading { font-size: 36px; font-weight: 700; margin: 0 0 1.5rem; }
     main p { font-size: 18px; }
+    main .about-hero {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0 0 2rem;
+    }
   </style>
+
+  <img
+    src="/images/about-hero.jpg"
+    alt="Sunset over the hills"
+    class="about-hero"
+    width="1800"
+    height="378"
+  />
 
   <h1 class="about-heading">About me</h1>
 
