@@ -10,6 +10,23 @@
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
+/* Publications page palette */
+body.publications {
+  --bg: #A5D6A7;
+}
+
+/* Research agenda page palette */
+body.research-agenda {
+  --bg: #EEEEEE;
+}
+
+/* Blog pages palette (index, entry, featured entry) */
+body.blog-index,
+body.blog-entry,
+body.featured-entry {
+  --bg: #FFDD9C;
+}
+
 * { box-sizing: border-box; }
 
 html, body {
@@ -27,6 +44,7 @@ html, body {
 body {
   margin: 0;
   padding: 0;
+  min-height: 100vh;
 }
 
 main {
@@ -174,7 +192,11 @@ ul.entries li a:hover { text-decoration: underline; }
 
 /* Home page: sidebar (profile image + social buttons) next to content */
 body.home main {
-  max-width: 960px;
+  max-width: none;
+  padding-left: 0;
+}
+body.home main .home-content {
+  max-width: 680px;
 }
 body.home main .home-content,
 body.home main .home-content p,
@@ -200,48 +222,68 @@ body.home main .home-list li {
   margin-bottom: 0.35rem;
 }
 
+/* Home page palette */
+body.home {
+  --bg: #E4F1FE;
+  --text: #1F2E3D;
+  --muted: #6A89A7;
+  --accent: #88BDF2;
+  --rule: #6A89A7;
+}
+
 .home-layout {
   display: flex;
   gap: 3rem;
   align-items: flex-start;
 }
 .home-sidebar {
-  flex: 0 0 200px;
+  flex: 0 0 350px;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
 }
 .profile-image {
-  width: 100%;
-  height: auto;
+  width: 350px;
+  height: 280px;
+  object-fit: contain;
+  background: var(--bg);
   display: block;
   border: 1px solid var(--text);
   border-radius: 0;
   box-sizing: border-box;
   margin: 0;
 }
-.social-buttons-container {
+.sidebar-links {
   display: flex;
   flex-direction: column;
+  gap: 1.1rem;
+}
+.home-sidebar nav.site-nav {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.55rem;
+  font-size: 18px;
+}
+.social-icons {
+  display: flex;
+  flex-direction: row;
   gap: 0.75rem;
 }
-.social-button {
-  display: block;
-  padding: 0.6rem 1rem;
-  background: transparent;
-  color: var(--text);
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
   border: 1px solid var(--text);
+  color: var(--text);
   text-decoration: none;
-  font-size: 16px;
-  text-align: center;
-  width: 100%;
   box-sizing: border-box;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
-.social-button:hover {
+.social-icons a:hover {
   background: var(--text);
   color: var(--bg);
-  text-decoration: none;
 }
 .home-content {
   flex: 1;
@@ -637,10 +679,11 @@ body.blog-index .post-item .post-summary {
   .profile-image {
     width: 33.333%;
     max-width: 33.333%;
+    height: auto;
     flex-shrink: 0;
     align-self: flex-start;
   }
-  .social-buttons-container {
+  .sidebar-links {
     flex: 1;
     justify-content: center;
   }

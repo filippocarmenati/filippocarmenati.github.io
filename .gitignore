@@ -30,5 +30,11 @@ pnpm-debug.log*
 ~$*
 src/content/blog/Text_blog/
 
+# Auto-generated markdown previews (e.g. pandoc HTML exports)
+/*.html
+
+# Raw camera source photos (large; cropped copies live in public/images/)
+Pictures_profile_intercropping/
+
 # Claude Code local config
 .claude/
