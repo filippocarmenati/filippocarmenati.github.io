@@ -12,7 +12,11 @@
 
 /* Publications page palette */
 body.publications {
-  --bg: #A5D6A7;
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #888888;
+  --accent: #111111;
+  --rule: #dddddd;
 }
 
 /* Research agenda page palette */
@@ -24,7 +28,11 @@ body.research-agenda {
 body.blog-index,
 body.blog-entry,
 body.featured-entry {
-  --bg: #FFDD9C;
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #888888;
+  --accent: #111111;
+  --rule: #dddddd;
 }
 
 * { box-sizing: border-box; }
@@ -225,11 +233,11 @@ body.home main .home-list li {
 
 /* Home page palette */
 body.home {
-  --bg: #E4F1FE;
-  --text: #1F2E3D;
-  --muted: #6A89A7;
-  --accent: #1D4E89;
-  --rule: #6A89A7;
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #888888;
+  --accent: #111111;
+  --rule: #dddddd;
 }
 
 .home-layout {
